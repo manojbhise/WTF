@@ -27,7 +27,7 @@ body{
 .bcg{
     width: 100vw;
     height: 95vh;
-    /* position: absolute; */
+    position: absolute;
     z-index: 10;
     top: 0;
     left: 0;
@@ -37,9 +37,9 @@ body{
     height: 100%;
 }
 .details{
-    /* position: absolute; */
-    /* top: 95vh; */
-    /* left: 0; */
+    position: absolute;
+    top: 95vh;
+    left: 0;
     width: 100vw;
     height: 150vh;
     color: white;
@@ -110,7 +110,7 @@ body{
     height: 50px;
     background-color: #2e2e2e;
     border: 2px solid #707070;
-    border-radius: 3px;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,7 +140,7 @@ body{
     font-size: 17px;
     background-color: #2e2e2e;
     border: 2px solid #707070;
-    border-radius: 3px;
+    border-radius: 5px;
     margin-right: 10px;
     padding-left: 5px;
 }
@@ -154,6 +154,7 @@ body{
     border: 2px solid #707070;
     outline: none;
     padding: 0 8px;
+    border-radius: 5px;
 }
 .filter > select:nth-child(7) > option{
     font-size: 16px;
