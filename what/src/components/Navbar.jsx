@@ -4,32 +4,32 @@ import logo from "../assets/logo.png"
 import { useState } from 'react'
 
 const Navbar = () => {
-  const [click, setClick] = useState("gyms");
-  const [scr1, setScr1] = useState(false);
 
-  window.onscroll = (ev) => {
+  const [clicked, setClicked] = useState("gyms");
+  const [bcg, setBcg] = useState(false);
+
+  window.onscroll = (e) => {
     if (window.pageYOffset > 0) {
-      setScr1(true);
+      setBcg(true);
     }
     else{
-      setScr1(false);
+      setBcg(false);
     }
-    // console.log("pageYOffset:",window.pageYOffset)
   };
 
   return (
-    <div className={styles.main} style={{backgroundColor: scr1? "#0d0d0d":"transparent"}}>
+    <div className={styles.main} style={{backgroundColor: bcg? "#0d0d0d":"transparent"}}>
       <div className={styles.nav}>
         <div className={styles.left}>
           <img src={logo} alt="logo" />
         </div>
         <div className={styles.right}>
           <ul>
-            <li onClick={()=>setClick("fitness")} style={{borderBottom: click=="fitness"? "2px solid brown":"none"}}><a href="#">Fitness</a></li>
-            <li onClick={()=>setClick("nutrition")} style={{borderBottom: click=="nutrition"? "2px solid brown":"none"}}><a href="#">Nutrition</a></li>
-            <li onClick={()=>setClick("gyms")} style={{borderBottom: click=="gyms"? "2px solid brown":"none"}}><a href="#">Gyms</a></li>
-            <li onClick={()=>setClick("become")} style={{borderBottom: click=="become"? "2px solid brown":"none"}}><a href="#">Become WTF Partner</a></li>
-            <li onClick={()=>setClick("about")} style={{borderBottom: click=="about"? "2px solid brown":"none"}}><a href="#">About US</a></li>
+            <li onClick={()=>setClicked("fitness")} style={{borderBottom: clicked=="fitness"? "2px solid brown":"none" }}><a style={{color: clicked=="fitness" && "white"}} href="#">Fitness</a></li>
+            <li onClick={()=>setClicked("nutrition")} style={{borderBottom: clicked=="nutrition"? "2px solid brown":"none"}}><a style={{color: clicked=="nutrition" && "white"}} href="#">Nutrition</a></li>
+            <li onClick={()=>setClicked("gyms")} style={{borderBottom: clicked=="gyms"? "2px solid brown":"none"}}><a style={{color: clicked=="gyms" && "white"}} href="#">Gyms</a></li>
+            <li onClick={()=>setClicked("become")} style={{borderBottom: clicked=="become"? "2px solid brown":"none"}}><a style={{color: clicked=="become" && "white"}} href="#">Become WTF Partner</a></li>
+            <li onClick={()=>setClicked("about")} style={{borderBottom: clicked=="about"? "2px solid brown":"none"}}><a style={{color: clicked=="about" && "white"}} href="#">About US</a></li>
             <li><button>Login</button></li>
           </ul>
         </div>
