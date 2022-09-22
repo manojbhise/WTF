@@ -16,9 +16,9 @@ import { useState } from "react";
 const Gyms = () => {
     
   const [find, setFind] = useState("");
-  const [info, setInfo] = useState([]);
   const [city, setCity] = useState("");
   const [location, setLocation] = useState("");
+  const [info, setInfo] = useState([]);
 
   useEffect(() => {
     axios
