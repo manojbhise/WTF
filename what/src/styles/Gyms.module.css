@@ -7,6 +7,16 @@ body{
     padding: 0;
     margin: 0;
 }
+body::-webkit-scrollbar {
+    display: none;
+}
+.grid::-webkit-scrollbar {
+    width: 7px;
+}
+.grid::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 10px;
+}
 .main{
     width: 100%;
 }
