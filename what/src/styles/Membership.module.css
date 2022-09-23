@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  .main {
+    margin: 0;
+    background-color: black;
+    border: 1px solid black;
+  }
+  .back{
+    height: 40px;
+    width: 100%;
+    color: white;
+    margin-left: 30px;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .back button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 550;
+  }
+  .back p{
+    display: flex;
+    align-items: center;
+  }
+  .gym{
+    width: 94%;
+    margin: auto;
+    margin-top: 500px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+  }
+  .left{
+    width: 49%;
+  }
+  .left h1:nth-child(1){
+    margin: 0;  
+    font-size: 50px;
+  }
+  .left h3:nth-child(2){
+    margin: 0;  
+    font-weight: 200;
+    font-size: 30px;
+  }
+  .left h3:nth-child(3){
+    margin-top: 60px;  
+    font-weight: 400;
+    font-size: 30px;
+  }
+  .left p:nth-child(4){
+    font-weight: 200;
+  }
+  .left h3:nth-child(5){
+    margin-top: 60px;  
+    font-weight: 400;
+    font-size: 30px;
+  }
+  .left div:nth-child(6){
+    display: flex;
+    font-weight: 200;
+  }
+  .left div:nth-child(6) p{
+    margin: 0;
+    padding-right: 15px;
+  }
+  .left h3:nth-child(7){
+    margin-top: 60px;  
+    font-weight: 400;
+    font-size: 30px;
+  }
+  .boxes{
+    display: grid;
+    grid-template-columns: repeat(3,130px);
+    grid-template-rows: repeat(2,130px);
+    gap: 20px;
+  }
+  .boxes div{
+    text-align: center;
+    border-radius: 3px;
+    background-color: #920909;
+    font-weight: 100;
+  }
+.boxes div p{
+  margin: 0;
+  margin-top: 8px;
+}
+.left h3:nth-child(9){
+  margin-top: 60px;  
+  font-weight: 400;
+  font-size: 30px;
+}
+.left ul:nth-child(10){
+  margin: 0;
+}
+.left ul:nth-child(10) li{
+  margin-bottom: 20px;
+}
+/* Right part */
+.right{
+  width: 49%;
+}
+.top1{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.top{
+  width: 190px;
+  height: 70px;
+  right: 0;
+  text-align: center;
+  background-color: #920909;
+}
+.top div{
+  margin-top: 8px;
+}
+.top p{
+  margin: 0;
+  font-size: 20px;
+}
+.bottom{
+  margin-top: 100px;
+  text-align: center;
+  background-color: #2e2e2e;
+  border-radius: 25px;
+}
+.bottom h1:nth-child(1){
+  margin: 0;
+  margin-top: 15px;
+}
+/* Buy Now */
+.buy{
+  width: 100%;
+  height: 130px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  background-color: #191919;
+}
+.btn1{
+  width: 350px;
+height: 60px;
+border: none;
+color: white;
+font-size: 20px;
+border-radius: 50px;
+background-color: #920909;
+}
+.btn2{
+  width: 350px;
+  height: 60px;
+  border: 1px solid white;
+  color: white;
+  font-size: 20px;
+  border-radius: 50px;
+  background-color: transparent;
+}

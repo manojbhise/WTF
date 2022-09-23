@@ -12,6 +12,8 @@ import { BsWhatsapp } from "react-icons/bs";
 import { useEffect } from "react";
 import axios from "axios";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
 const Gyms = () => {
     
@@ -19,6 +21,7 @@ const Gyms = () => {
   const [city, setCity] = useState("");
   const [location, setLocation] = useState("");
   const [info, setInfo] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     axios
@@ -30,10 +33,11 @@ const Gyms = () => {
   }, []);
   
   console.log("in", info);
-  console.log("c",city);
+  // console.log("c",city);
 
   return (
     <div className={styles.main}>
+      <Navbar />
       <div className={styles.whatsapp}>
         <BsWhatsapp style={{fontSize: "28px", color:"white"}}/>
       </div>
@@ -136,8 +140,8 @@ const Gyms = () => {
                         {Math.round(item.distance) / 100}km
                       </p>
                       <div>
-                        <p></p>
-                        <button>Book Now</button>
+                        <p></p> 
+                        <button onClick={()=>navigate("membership")}>Book Now</button>
                       </div>
                     </div>
                   </div>

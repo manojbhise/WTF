@@ -1,14 +1,17 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Navbar from "./components/Navbar";
 import Gyms from "./pages/Gyms";
+import Membership from "./pages/Membership";
 import Footer from "./components/Footer";
+import { Routes, Route } from "react-router-dom"
 
 function App() {
   return (
     <div>
-      <Navbar />
-      <Gyms/>
+      <Routes>
+        <Route path="" element={<Gyms />}/>
+        <Route path="membership" element={<Membership />}/>
+      </Routes>
       <Footer/>
     </div>
   );
